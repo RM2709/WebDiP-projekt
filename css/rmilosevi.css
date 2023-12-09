@@ -1,0 +1,263 @@
+body{
+    background-color: brown;
+    color: beige;
+    min-height: 100vh;
+}
+
+hr{
+    border: solid 1px beige;
+    width: 100%;
+}
+
+a{
+    color: beige;
+    text-decoration: none;
+}
+
+a:hover{
+    color:coral;
+}
+
+input[type=text], [type=email], [type=password], [type=date]{
+    border: solid 1px black;
+    border-radius: 2px;
+}
+
+/* Pocetna stranica */
+#pocetni-odabir{
+    font-size: 17px;
+    text-align: center;
+}
+
+#pocetni-odabir ul{
+    display: inline-block;
+    list-style-type: none;;
+    text-align: center;
+    width:20%;
+
+}
+
+#pocetni-odabir ul li{
+    border: 2px solid beige;
+    padding: 1em;
+    margin: 1em;
+}
+
+#pocetni-odabir ul li a{
+    padding: inherit;
+    margin: inherit;
+}
+
+
+/* O autoru */
+.o_autoru{
+    word-wrap: break-word;
+    position:relative;
+    width: auto;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.o_autoru img{
+    float: left;
+    margin: auto;
+    width: auto;
+    height: 150px;
+}
+
+.o_autoru ul{
+    list-style-type: "♠";
+    display: table;
+    font-size: 18px;
+    padding-left: 1em;
+}
+
+.o_autoru ul li{
+    padding-left: 0.5em;
+    padding-bottom: 0.2em;
+    word-wrap: break-word;
+}
+
+/* Zaglavlje */
+
+header{
+    height: 75px;
+}
+
+#zaglavlje{
+    text-align: center;
+    font:bold;
+    font-weight: bolder;
+    font-size: 75px;
+    color: beige;
+}
+
+a[href="#header-tekst"]{
+    text-decoration: none;
+    color:beige;
+    text-align: center;
+}
+
+.logo{
+    float: right;
+}
+
+.izbornik{
+    float:left;
+}
+
+#header-tekst:target + nav{
+    display:none;
+}
+
+#zaglavlje:target + nav{
+    display:block;
+}
+
+/* Izbornik */
+
+nav{
+    display: none;
+    height:75px;
+}
+
+nav ul{
+    position: relative;
+    top: 40%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    border: solid 2px;
+    padding: 7px;
+    color: beige;
+}
+
+/* Obrasci */
+
+.obrazac{
+    text-align: center;
+    border: solid 5px beige;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 2em;
+    width: 23%;
+}
+
+#obrazac-prijava input:hover{
+    box-shadow: 0 0 5px beige;
+    font-size: 105%;
+}
+
+#obrazac-prijava label:hover{
+    text-shadow: 1px 1px beige;
+    font-size: 120%;
+}
+
+.g-recaptcha{
+    display: inline-block;
+}
+
+/* Tablica */
+
+table{
+    border: solid 2px beige;
+    margin: auto;
+}
+
+.tablica-naslov{
+    text-align: center;
+    font-size: 45px;
+    color: beige;
+    font-weight: bolder;
+    margin:auto;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: solid 2px beige;
+    padding: 10px;
+}
+
+table thead th{
+    color: beige;
+    font-size: 25px;
+    padding: 10px;
+}
+
+table tbody td, table tfoot td{
+    text-align: center;
+    font-size: 20px;
+    color: beige;
+    font-weight: bolder;
+    background-color:brown;
+}
+
+/* Slike namještaja */
+
+#sortiranje_pretrazivanje{
+    margin:auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galerija {
+    display: inline;
+    width: 100%;
+  }
+  
+.galerija img {
+    width: 22%;
+    height: 300px;
+    padding: 1%;
+  }
+
+  .galerija img:hover{
+    transform: scale(1.2);
+    margin-left: 2%;
+  }
+
+  .galerija form{
+      border: 1px solid bisque;
+      width: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 40%;
+  }
+
+
+/* Gumbi i grupacije na obrascu */
+
+fieldset{
+    position:relative;
+    left: 20%;
+    right: 20%;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.gumb{
+    position:relative;
+    border: solid 2px rgba(82, 50, 19);
+    color: rgba(82, 50, 19);
+    font-weight: bolder;
+    ;
+}
+
+.gumb:hover{
+    transform: scale(1.08);
+}
